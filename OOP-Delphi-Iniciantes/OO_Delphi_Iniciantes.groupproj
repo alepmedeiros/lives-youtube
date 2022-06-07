@@ -1,0 +1,108 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{E22DC7CB-06FC-4302-AC81-0CD09855A01E}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="aula-01-Principais-conceitos-02-Abstracao\aula01_aula02.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="aula03-encapsulamento\aula03_encapsulamento.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="aula4-acoplamento\Aula04_acoplamento.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="aula5-herança\aula05_heranca.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="aula6-polimorfismo-overload\aula06_polimorfismo_overload.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="aula07_polimorfismo-virtual-override\aula07_polimorfismo_virtual_override.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="aula08_polimorfismo-abastract\aula08_polimorfismo_abstract.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="aula01_aula02">
+        <MSBuild Projects="aula-01-Principais-conceitos-02-Abstracao\aula01_aula02.dproj"/>
+    </Target>
+    <Target Name="aula01_aula02:Clean">
+        <MSBuild Projects="aula-01-Principais-conceitos-02-Abstracao\aula01_aula02.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="aula01_aula02:Make">
+        <MSBuild Projects="aula-01-Principais-conceitos-02-Abstracao\aula01_aula02.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="aula03_encapsulamento">
+        <MSBuild Projects="aula03-encapsulamento\aula03_encapsulamento.dproj"/>
+    </Target>
+    <Target Name="aula03_encapsulamento:Clean">
+        <MSBuild Projects="aula03-encapsulamento\aula03_encapsulamento.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="aula03_encapsulamento:Make">
+        <MSBuild Projects="aula03-encapsulamento\aula03_encapsulamento.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Aula04_acoplamento">
+        <MSBuild Projects="aula4-acoplamento\Aula04_acoplamento.dproj"/>
+    </Target>
+    <Target Name="Aula04_acoplamento:Clean">
+        <MSBuild Projects="aula4-acoplamento\Aula04_acoplamento.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Aula04_acoplamento:Make">
+        <MSBuild Projects="aula4-acoplamento\Aula04_acoplamento.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="aula05_heranca">
+        <MSBuild Projects="aula5-herança\aula05_heranca.dproj"/>
+    </Target>
+    <Target Name="aula05_heranca:Clean">
+        <MSBuild Projects="aula5-herança\aula05_heranca.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="aula05_heranca:Make">
+        <MSBuild Projects="aula5-herança\aula05_heranca.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="aula06_polimorfismo_overload">
+        <MSBuild Projects="aula6-polimorfismo-overload\aula06_polimorfismo_overload.dproj"/>
+    </Target>
+    <Target Name="aula06_polimorfismo_overload:Clean">
+        <MSBuild Projects="aula6-polimorfismo-overload\aula06_polimorfismo_overload.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="aula06_polimorfismo_overload:Make">
+        <MSBuild Projects="aula6-polimorfismo-overload\aula06_polimorfismo_overload.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="aula07_polimorfismo_virtual_override">
+        <MSBuild Projects="aula07_polimorfismo-virtual-override\aula07_polimorfismo_virtual_override.dproj"/>
+    </Target>
+    <Target Name="aula07_polimorfismo_virtual_override:Clean">
+        <MSBuild Projects="aula07_polimorfismo-virtual-override\aula07_polimorfismo_virtual_override.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="aula07_polimorfismo_virtual_override:Make">
+        <MSBuild Projects="aula07_polimorfismo-virtual-override\aula07_polimorfismo_virtual_override.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="aula08_polimorfismo_abstract">
+        <MSBuild Projects="aula08_polimorfismo-abastract\aula08_polimorfismo_abstract.dproj"/>
+    </Target>
+    <Target Name="aula08_polimorfismo_abstract:Clean">
+        <MSBuild Projects="aula08_polimorfismo-abastract\aula08_polimorfismo_abstract.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="aula08_polimorfismo_abstract:Make">
+        <MSBuild Projects="aula08_polimorfismo-abastract\aula08_polimorfismo_abstract.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="aula01_aula02;aula03_encapsulamento;Aula04_acoplamento;aula05_heranca;aula06_polimorfismo_overload;aula07_polimorfismo_virtual_override;aula08_polimorfismo_abstract"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="aula01_aula02:Clean;aula03_encapsulamento:Clean;Aula04_acoplamento:Clean;aula05_heranca:Clean;aula06_polimorfismo_overload:Clean;aula07_polimorfismo_virtual_override:Clean;aula08_polimorfismo_abstract:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="aula01_aula02:Make;aula03_encapsulamento:Make;Aula04_acoplamento:Make;aula05_heranca:Make;aula06_polimorfismo_overload:Make;aula07_polimorfismo_virtual_override:Make;aula08_polimorfismo_abstract:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
