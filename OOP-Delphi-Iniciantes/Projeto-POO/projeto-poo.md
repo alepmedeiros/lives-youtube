@@ -2,7 +2,6 @@
 >
 Este é um exemplo onde estaremos aplicando técnicas de Orientação a Objetos do nosso treinamento de **_Orientação a Objetos para Iniciantes_**
 
----
 
 > ### Iremos desenvolver uma aplicação atendendo aos seguintes requisitos:
 
