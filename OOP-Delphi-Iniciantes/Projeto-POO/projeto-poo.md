@@ -9,10 +9,12 @@ Este é um exemplo onde estaremos aplicando técnicas de Orientação a Objetos 
  
 > #### Abaixo estão alguns requisitos para a criação do projeto:
 
-1. Criar um cadastro de pedidos, onde iremos necessitar de Produtos, Clientes, para que possa ser realizado os pedidos para as vendas.
-2. Criar conexão com o banco de dados para que possam ser cadastrados os dados e tenhamos a possibilidade de pesquisar informações.
-3. Ter uma tela onde possa ser realizado os pedidos para a venda, onde possamos selecionar um cliente, e adicionar produtos selecionados.
-4. Ter uma lista onde irá receber os produtos, para o pedido da venda.
-5. Ter a possibilidade de pesquisar os clientes por código ou pelo próprio nome.
-6. Ter a possibilidade de pesquisar os produtos pelo código, e poder informar a quantidade, ao adicionar esse produto para o pedido já receber o totalizador.
-7. Poder finalizar o pedido e gerar um código para que possa ser passado para o cliente.
+1. Criar um cadastro de tarefas.
+2. Essas tarefas serão separadas por usuário.
+3. Cada usuário irá ter suas tarefas.
+4. Essas tarefas irão ter Titulo, Descrição, e data da sua criação.
+5. Usuário irá ter nome, e-mail, e senha, onde teremos essas validações por login.
+6. Iremos precisar de uma tera para acesso por usuário.
+7. Uma tela onde iremos ter todas as tarefas por usuários.
+8. Uma tela para que possamos cadastrar essas tarefas por usuários.
+ 
