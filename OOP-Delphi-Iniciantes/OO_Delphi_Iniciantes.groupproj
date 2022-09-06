@@ -24,6 +24,12 @@
         <Projects Include="aula08_polimorfismo-abastract\aula08_polimorfismo_abstract.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="aula10_construtores_destrutores\aula10_construtores_destrutores.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="aula11_modificadores_acesso\aula11_modificadores_acesso.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -95,14 +101,32 @@
     <Target Name="aula08_polimorfismo_abstract:Make">
         <MSBuild Projects="aula08_polimorfismo-abastract\aula08_polimorfismo_abstract.dproj" Targets="Make"/>
     </Target>
+    <Target Name="aula10_construtores_destrutores">
+        <MSBuild Projects="aula10_construtores_destrutores\aula10_construtores_destrutores.dproj"/>
+    </Target>
+    <Target Name="aula10_construtores_destrutores:Clean">
+        <MSBuild Projects="aula10_construtores_destrutores\aula10_construtores_destrutores.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="aula10_construtores_destrutores:Make">
+        <MSBuild Projects="aula10_construtores_destrutores\aula10_construtores_destrutores.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="aula11_modificadores_acesso">
+        <MSBuild Projects="aula11_modificadores_acesso\aula11_modificadores_acesso.dproj"/>
+    </Target>
+    <Target Name="aula11_modificadores_acesso:Clean">
+        <MSBuild Projects="aula11_modificadores_acesso\aula11_modificadores_acesso.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="aula11_modificadores_acesso:Make">
+        <MSBuild Projects="aula11_modificadores_acesso\aula11_modificadores_acesso.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="aula01_aula02;aula03_encapsulamento;Aula04_acoplamento;aula05_heranca;aula06_polimorfismo_overload;aula07_polimorfismo_virtual_override;aula08_polimorfismo_abstract"/>
+        <CallTarget Targets="aula01_aula02;aula03_encapsulamento;Aula04_acoplamento;aula05_heranca;aula06_polimorfismo_overload;aula07_polimorfismo_virtual_override;aula08_polimorfismo_abstract;aula10_construtores_destrutores;aula11_modificadores_acesso"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="aula01_aula02:Clean;aula03_encapsulamento:Clean;Aula04_acoplamento:Clean;aula05_heranca:Clean;aula06_polimorfismo_overload:Clean;aula07_polimorfismo_virtual_override:Clean;aula08_polimorfismo_abstract:Clean"/>
+        <CallTarget Targets="aula01_aula02:Clean;aula03_encapsulamento:Clean;Aula04_acoplamento:Clean;aula05_heranca:Clean;aula06_polimorfismo_overload:Clean;aula07_polimorfismo_virtual_override:Clean;aula08_polimorfismo_abstract:Clean;aula10_construtores_destrutores:Clean;aula11_modificadores_acesso:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="aula01_aula02:Make;aula03_encapsulamento:Make;Aula04_acoplamento:Make;aula05_heranca:Make;aula06_polimorfismo_overload:Make;aula07_polimorfismo_virtual_override:Make;aula08_polimorfismo_abstract:Make"/>
+        <CallTarget Targets="aula01_aula02:Make;aula03_encapsulamento:Make;Aula04_acoplamento:Make;aula05_heranca:Make;aula06_polimorfismo_overload:Make;aula07_polimorfismo_virtual_override:Make;aula08_polimorfismo_abstract:Make;aula10_construtores_destrutores:Make;aula11_modificadores_acesso:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
