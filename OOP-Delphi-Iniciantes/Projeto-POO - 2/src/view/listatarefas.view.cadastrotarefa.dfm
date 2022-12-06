@@ -1,0 +1,141 @@
+object frmCadastroTarefas: TfrmCadastroTarefas
+  Left = 0
+  Top = 0
+  Caption = 'Cadastrar Tarefa'
+  ClientHeight = 316
+  ClientWidth = 399
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -16
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 19
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 399
+    Height = 316
+    Align = alClient
+    BevelOuter = bvNone
+    TabOrder = 0
+    object Panel2: TPanel
+      Left = 0
+      Top = 258
+      Width = 399
+      Height = 58
+      Align = alBottom
+      BevelOuter = bvNone
+      Padding.Left = 5
+      Padding.Top = 3
+      Padding.Right = 3
+      Padding.Bottom = 3
+      TabOrder = 0
+      object Button1: TButton
+        Left = 5
+        Top = 3
+        Width = 94
+        Height = 52
+        Align = alLeft
+        Caption = 'Salvar'
+        TabOrder = 0
+        OnClick = Button1Click
+        ExplicitLeft = 3
+      end
+      object Button2: TButton
+        Left = 316
+        Top = 3
+        Width = 80
+        Height = 52
+        Align = alRight
+        Caption = 'Sair'
+        TabOrder = 1
+        OnClick = Button2Click
+        ExplicitLeft = 321
+      end
+    end
+    object Panel3: TPanel
+      Left = 0
+      Top = 0
+      Width = 399
+      Height = 258
+      Align = alClient
+      BevelOuter = bvNone
+      Padding.Left = 10
+      Padding.Top = 10
+      Padding.Right = 10
+      Padding.Bottom = 10
+      TabOrder = 1
+      object Panel4: TPanel
+        Left = 10
+        Top = 10
+        Width = 379
+        Height = 50
+        Align = alTop
+        BevelOuter = bvNone
+        TabOrder = 0
+        object Label1: TLabel
+          Left = 0
+          Top = 0
+          Width = 379
+          Height = 19
+          Align = alTop
+          Caption = 'Titulo'
+          ExplicitWidth = 41
+        end
+        object edtTitulo: TEdit
+          Left = 0
+          Top = 23
+          Width = 379
+          Height = 27
+          Align = alBottom
+          TabOrder = 0
+          ExplicitLeft = 16
+          ExplicitWidth = 353
+        end
+      end
+      object Panel5: TPanel
+        AlignWithMargins = True
+        Left = 10
+        Top = 63
+        Width = 379
+        Height = 185
+        Margins.Left = 0
+        Margins.Right = 0
+        Margins.Bottom = 0
+        Align = alClient
+        BevelOuter = bvNone
+        TabOrder = 1
+        ExplicitLeft = 80
+        ExplicitTop = 152
+        ExplicitWidth = 185
+        ExplicitHeight = 41
+        object Label2: TLabel
+          AlignWithMargins = True
+          Left = 0
+          Top = 0
+          Width = 379
+          Height = 19
+          Margins.Left = 0
+          Margins.Top = 0
+          Margins.Right = 0
+          Align = alTop
+          Caption = 'Descricao'
+          ExplicitWidth = 67
+        end
+        object MemoDescricao: TMemo
+          Left = 0
+          Top = 22
+          Width = 379
+          Height = 163
+          Align = alClient
+          TabOrder = 0
+          ExplicitTop = 32
+          ExplicitHeight = 153
+        end
+      end
+    end
+  end
+end

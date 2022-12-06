@@ -1,0 +1,125 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 281
+  ClientWidth = 495
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Padding.Right = 5
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 490
+    Height = 90
+    Align = alTop
+    BevelOuter = bvNone
+    TabOrder = 0
+    ExplicitWidth = 495
+    object Panel3: TPanel
+      Left = 0
+      Top = 0
+      Width = 193
+      Height = 90
+      Align = alLeft
+      BevelOuter = bvNone
+      TabOrder = 0
+      ExplicitHeight = 97
+      object Button1: TButton
+        Left = 0
+        Top = 0
+        Width = 193
+        Height = 45
+        Align = alTop
+        Caption = 'Array'
+        TabOrder = 0
+        OnClick = Button1Click
+      end
+      object Button2: TButton
+        Left = 0
+        Top = 45
+        Width = 193
+        Height = 45
+        Align = alClient
+        Caption = 'Record'
+        TabOrder = 1
+        OnClick = Button2Click
+        ExplicitLeft = 80
+        ExplicitTop = 56
+        ExplicitWidth = 75
+        ExplicitHeight = 25
+      end
+    end
+    object Panel4: TPanel
+      Left = 193
+      Top = 0
+      Width = 297
+      Height = 90
+      Align = alClient
+      BevelOuter = bvNone
+      TabOrder = 1
+      ExplicitLeft = 264
+      ExplicitTop = 32
+      ExplicitWidth = 185
+      ExplicitHeight = 41
+      object Edit1: TEdit
+        Left = 16
+        Top = 12
+        Width = 89
+        Height = 21
+        TabOrder = 0
+      end
+      object Edit2: TEdit
+        Left = 16
+        Top = 39
+        Width = 249
+        Height = 21
+        TabOrder = 1
+      end
+      object Edit3: TEdit
+        Left = 16
+        Top = 66
+        Width = 249
+        Height = 21
+        TabOrder = 2
+      end
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 90
+    Width = 490
+    Height = 191
+    Align = alClient
+    BevelOuter = bvNone
+    Padding.Left = 5
+    Padding.Top = 5
+    Padding.Right = 5
+    Padding.Bottom = 5
+    TabOrder = 1
+    ExplicitLeft = 128
+    ExplicitTop = 152
+    ExplicitWidth = 185
+    ExplicitHeight = 41
+    object Memo1: TMemo
+      Left = 5
+      Top = 5
+      Width = 480
+      Height = 181
+      Align = alClient
+      BorderStyle = bsNone
+      TabOrder = 0
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 495
+      ExplicitHeight = 191
+    end
+  end
+end
