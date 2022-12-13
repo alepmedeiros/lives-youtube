@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{2E433642-8D15-4657-A8DF-04F404C2169C}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="CustomStyle.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Nova pasta\Project1.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="CustomStyle">
+        <MSBuild Projects="CustomStyle.dproj"/>
+    </Target>
+    <Target Name="CustomStyle:Clean">
+        <MSBuild Projects="CustomStyle.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CustomStyle:Make">
+        <MSBuild Projects="CustomStyle.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Project1">
+        <MSBuild Projects="Nova pasta\Project1.dproj"/>
+    </Target>
+    <Target Name="Project1:Clean">
+        <MSBuild Projects="Nova pasta\Project1.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Project1:Make">
+        <MSBuild Projects="Nova pasta\Project1.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="CustomStyle;Project1"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="CustomStyle:Clean;Project1:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="CustomStyle:Make;Project1:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
