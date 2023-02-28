@@ -1,0 +1,11 @@
+{
+	"name": "live15k",
+	"description": "",
+	"version": "1.0.0",
+	"homepage": "",
+	"mainsrc": "./",
+	"projects": [],
+	"dependencies": {
+		"https://github.com/gabrielbaltazar/gbjson": "^1.0.10"
+	}
+}
